@@ -1,9 +1,9 @@
 # Sentiment Analysis on Product Reviews 🔍
 
-Fine-tuned **BERT** (`bert-base-uncased`) on 40,000 Amazon product reviews to classify sentiment as positive or negative. Deployed as an interactive **Streamlit** web app.
+Fine-tuned BERT (bert-base-uncased) on 40,000 Amazon Polarity reviews to classify sentiment as positive or negative. Includes an interactive Streamlit web app.
 
 ## Results
-
+Evaluated on 10,000 held-out reviews from the Amazon Polarity test set.
 | Metric    | Score  |
 |-----------|--------|
 | Accuracy  | 91.2%  |
