@@ -24,7 +24,7 @@ EPOCHS       = 3
 LR           = 2e-5
 
 # ── Load dataset ─────────────────────────────────────────────────────────────
-# Using the "amazon_polarity" dataset (positive / negative reviews, 50k subset)
+# 40,000 training reviews, 10,000 test reviews
 print("Loading dataset...")
 raw = load_dataset("amazon_polarity", split={"train": "train[:40000]", "test": "test[:10000]"})
 
