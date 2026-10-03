@@ -6,10 +6,10 @@ Fine-tuned BERT (bert-base-uncased) on 40,000 Amazon Polarity reviews to classif
 Evaluated on 10,000 held-out reviews from the Amazon Polarity test set.
 | Metric    | Score  |
 |-----------|--------|
-| Accuracy  | 91.2%  |
-| Precision | 91.5%  |
-| Recall    | 90.9%  |
-| F1-Score  | 91.2%  |
+| Accuracy  | 93.2%  |
+| Precision | 93.5%  |
+| Recall    | 93.9%  |
+| F1-Score  | 93.2%  |
 
 ## Project Structure
 
