@@ -1,5 +1,6 @@
 torch>=2.0.0
-transformers>=4.40.0
+transformers>=4.41.0
+accelerate>=0.26.0
 datasets>=2.19.0
 scikit-learn>=1.4.0
 streamlit>=1.35.0
