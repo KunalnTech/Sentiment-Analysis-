@@ -6,7 +6,7 @@ import torch.nn.functional as F
 st.set_page_config(page_title="Sentiment Analyser", page_icon="🔍", layout="centered")
 
 st.title("🔍 Product Review Sentiment Analyser")
-st.markdown("Fine-tuned **BERT** model trained on 50,000 Amazon product reviews.")
+st.markdown("Fine-tuned **BERT** model trained on 40,000 Amazon product reviews (tested on 10,000).")
 st.divider()
 
 MODEL_PATH = "./model"
@@ -20,7 +20,7 @@ def load_model():
         mdl = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
         st.success("Fine-tuned model loaded!")
     except Exception:
-        st.warning("Fine-tuned model not found. Using base BERT.")
+        st.warning("Fine-tuned model not found in ./model. Predictions below come from an untrained base BERT and are not meaningful. Run train.py first.")
         tok = AutoTokenizer.from_pretrained("bert-base-uncased")
         mdl = AutoModelForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=2)
     mdl.eval()
