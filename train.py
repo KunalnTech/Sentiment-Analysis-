@@ -26,7 +26,7 @@ LR           = 2e-5
 # ── Load dataset ─────────────────────────────────────────────────────────────
 # 40,000 training reviews, 10,000 test reviews
 print("Loading dataset...")
-raw = load_dataset("amazon_polarity", split={"train": "train[:40000]", "test": "test[:10000]"})
+raw = load_dataset("fancyzhx/amazon_polarity", split={"train": "train[:40000]", "test": "test[:10000]"})
 
 # ── Tokenizer ────────────────────────────────────────────────────────────────
 tokenizer = BertTokenizer.from_pretrained(MODEL_NAME)
